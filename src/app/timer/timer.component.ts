@@ -9,6 +9,7 @@ import * as moment from 'moment';
 
 export class TimerComponent implements OnChanges{
   @Input('date') date;
+  @Input('event') event;
   now;
   target;
   diffDuration;
@@ -24,12 +25,12 @@ export class TimerComponent implements OnChanges{
     setInterval(() => {
       this.now = moment();
       this.diffDuration = moment.duration(this.target.diff(this.now));
-      this.days = this.diffDuration.days();
-      this.months =  this.diffDuration.months();
-      this.years =  this.diffDuration.years();
-      this.hours =  this.diffDuration.hours();
-      this.minutes =  this.diffDuration.minutes();
-      this.seconds =  this.diffDuration.seconds();
+        this.days = this.diffDuration.days();
+        this.months =  this.diffDuration.months();
+        this.years =  this.diffDuration.years();
+        this.hours =  this.diffDuration.hours();
+        this.minutes =  this.diffDuration.minutes();
+        this.seconds =  this.diffDuration.seconds();
     }, 1000)
   }
 }

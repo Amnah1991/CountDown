@@ -1,29 +1,28 @@
-
-<div class="box">
+<div  *ngIf ="years >= 0 && months >= 0 && days >= 0 " class="box">
+  <div class = "event-text">
+    Remaining time for  {{ event }}  :
+  </div>
   <h4>
-    <span class = "number">  {{ seconds}} </span>  Seconds 
+    <span class="number"> {{ seconds}} </span> Seconds
   </h4>
 
   <h4>
-    <span class = "number">  {{ minutes}} </span>  Minutes 
+    <span class="number"> {{ minutes}} </span> Minutes
   </h4>
 
   <h4>
-    <span class = "number">  {{ hours}} </span>  Hours 
+    <span class="number"> {{ hours}} </span> Hours
   </h4>
 
   <h4>
-    <span class = "number">  {{ days}} </span>  Days 
+    <span class="number"> {{ days}} </span> Days
   </h4>
 
   <h4>
-    <span class = "number" >  {{ months}} </span>  Months 
+    <span class="number"> {{ months}} </span> Months
   </h4>
 
   <h4>
-    <span class = "number" >  {{ years }} </span>  Years 
+    <span class="number"> {{ years }} </span> Years
   </h4>
-
 </div>
-
- 

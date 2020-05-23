@@ -5,7 +5,7 @@
   <div class=inner-box>
     <mat-form-field  class="event">
       <mat-label> Event name </mat-label>
-      <input matInput>
+      <input [(ngModel)]="event" matInput>
     </mat-form-field>
   
     <mat-form-field class="date">
@@ -15,6 +15,6 @@
       <mat-datepicker ngDefaultControl #myDatepicker></mat-datepicker>
     </mat-form-field>
   </div>
-  <timer class = "time" *ngIf="date" [date]="date"></timer>
+  <timer class = "time" *ngIf="date && event" [event] = "event" [date]="date"></timer>
 </div>
 

@@ -7,5 +7,6 @@ import { Component, OnChanges } from '@angular/core';
 })
 export class AppComponent{
   date;
+  event ='';
   minDate = new Date;
 }
